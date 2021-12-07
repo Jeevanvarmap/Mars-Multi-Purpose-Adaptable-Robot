@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Video Streaming</title>
+<style>
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+  </head>
+  <body>
+    <img id="bg" src="{{ url_for('video_feed') }}">
+  </body>
+</html>
